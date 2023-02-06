@@ -17,7 +17,9 @@ on:
 env: 
   gh_token: ${{ secrets.FARM_TOKEN }}
   
-permissions: read-all  
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   build:
