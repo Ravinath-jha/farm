@@ -16,6 +16,8 @@ on:
 
 env: 
   gh_token: ${{ secrets.FARM_TOKEN }}
+  
+permissions: read-all  
 
 jobs:
   build:
