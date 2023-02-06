@@ -1,10 +1,15 @@
 package com.farm.backend.models;
 
-import lombok.Data;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.util.Date;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@SuperBuilder(toBuilder = true)
 public class ToolsRQ {
     private String toolName;
     private Double price;

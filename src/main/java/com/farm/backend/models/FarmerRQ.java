@@ -1,8 +1,13 @@
 package com.farm.backend.models;
 
-import lombok.Data;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@SuperBuilder(toBuilder = true)
 public class FarmerRQ {
     private String name;
     private String farmAddress;

@@ -1,15 +1,15 @@
 package com.farm.backend.models;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import java.util.Date;
 
-@Data
-@Builder
-@EqualsAndHashCode
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@SuperBuilder(toBuilder = true)
 @ToString
 public class BookingRQ {
     private Double bookingAmount;

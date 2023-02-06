@@ -1,8 +1,19 @@
 package com.farm.backend.datatable;
 
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
 import javax.persistence.*;
 import java.util.Date;
 
+@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@SuperBuilder(toBuilder = true)
+@ToString(callSuper = true)
+@EqualsAndHashCode
 @Entity
 @Table(name = "booking")
 public class BookingEntity {
