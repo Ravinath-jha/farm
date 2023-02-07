@@ -17,5 +17,7 @@ public class BookingRQ {
     private Date bookingDate;
     private String cropName;
     private Long quantityInKg;
+    private String userId;
+
 
 }

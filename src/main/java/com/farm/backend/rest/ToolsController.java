@@ -1,8 +1,6 @@
 package com.farm.backend.rest;
 
-import com.farm.backend.models.FarmerRQ;
 import com.farm.backend.models.ToolsRQ;
-import com.farm.backend.service.FarmerService;
 import com.farm.backend.service.ToolsService;
 import com.farm.backend.utils.RestApiErrorResponse;
 import com.farm.backend.utils.RestApiSuccessResponse;
@@ -28,7 +26,7 @@ public class ToolsController {
         try {
             success = new RestApiSuccessResponse(HttpStatus.OK.value(),
                     "Success", System.currentTimeMillis(),
-                    toolsService.createFarmer(request));
+                    toolsService.createTools(request));
 
             return new ResponseEntity<>(success, HttpStatus.OK);
         } catch (Exception e) {
