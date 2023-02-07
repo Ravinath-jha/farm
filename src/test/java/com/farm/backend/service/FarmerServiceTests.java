@@ -30,6 +30,7 @@ public class FarmerServiceTests {
     @BeforeEach
     public void createTestData() {
         try {
+            Thread.sleep(30*1000);
             for (int i = 1; i <= 100; i++) {
                 FarmerRQ farmerRQ = FarmerRQ
                         .builder()

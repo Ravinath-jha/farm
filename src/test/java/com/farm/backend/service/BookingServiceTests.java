@@ -31,6 +31,7 @@ public class BookingServiceTests {
     @BeforeEach
     public void createTestBookingData() {
         try {
+            Thread.sleep(30*1000);
             for (int i = 1; i <= 100; i++) {
                 BookingRQ request = BookingRQ.builder()
                         .bookingAmount((double) (100 + i))

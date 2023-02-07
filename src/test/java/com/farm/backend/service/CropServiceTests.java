@@ -32,6 +32,7 @@ public class CropServiceTests {
     @BeforeEach
     public void createTestCropData() {
         try {
+            Thread.sleep(30*1000);
             for (int i = 1; i <= 100; i++) {
                 CropRQ request = CropRQ.builder()
                         .cropName("CROP_NAME_" + i)

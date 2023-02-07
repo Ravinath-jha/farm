@@ -27,6 +27,7 @@ public class ToolsServiceTests {
     @BeforeEach
     public void createTestData() {
         try {
+            Thread.sleep(30*1000);
             for (int i = 1; i <= 100; i++) {
                 ToolsRQ toolsRQ = ToolsRQ.builder()
                         .toolType("TOOL_TYPE_" + i)
